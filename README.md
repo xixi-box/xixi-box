@@ -14,7 +14,7 @@
 
 ## About Me
 
-- 上海海洋大学硕士研究生，方向为计算机技术。
+- 上海海洋大学硕士研究生，方向为基于3DGS的无人机影像实时三维建模。
 - 关注 AI Agent、LLM 应用工程、Java 后端与分布式系统。
 - 使用 Claude Code、Codex、GPT、Gemini、DeepSeek 辅助需求拆解、方案设计、实现、Review 与 Debug，并通过人工审查、测试和 CI/CD 控制交付质量。
 - 完整经历与在线项目演示请访问 [个人简历网站](https://wangshun.work)。
@@ -26,6 +26,7 @@
 | **AI Coder** | 面向自然语言生成前端应用的全栈平台，通过多 Agent 完成规划、脚手架生成、UI 编码、审查、修复、预览与部署闭环。 | Spring AI Alibaba Graph、LangChain4j、Tool Calling、RAG、Redis、Dubbo、Vue 3、Docker | [源码](https://github.com/wangshun-china/ai-code) · [在线体验](https://ai-coder.wangshun.work) |
 | **Lumina-RPC** | 自研轻量 RPC 框架，覆盖协议编解码、服务注册发现、动态代理、负载均衡、容错保护、链路追踪及可视化控制面。 | Java、Netty、ByteBuddy、SPI、SSE、Vue Flow、ECharts | [源码](https://github.com/wangshun-china/lumina-rpc) · [在线演示](https://rpc.wangshun.work) |
 | **Agent Quest** | 用交互式关卡展示 Agent Harness 的边界、工具调用、规划、记忆、观测与评测流程。 | TypeScript、Agent Harness、Tool Calling、Observability | [源码](https://github.com/wangshun-china/agent-quest) · [在线体验](https://agent.wangshun.work) |
+| **API 中转平台** | 自主搭建并维护的模型 API 中转服务，为不同模型渠道提供统一接口入口、调用管理与用量统计。 | 模型 API 聚合、渠道管理、用量统计、Docker、Nginx、HTTPS | [在线访问](https://api.wangshun.work) |
 | **AutoGuard AI** | GitHub App 智能代码审查服务，通过 Webhook 拉取 PR Diff，调用大模型生成结构化审查意见并回写评论。 | Python、FastAPI、GitHub App、Webhook、DeepSeek、JWT、HMAC | [源码](https://github.com/xixi-box/AutoGuard-AI-Reviewer) |
 
 > 部分在线演示运行在本地 WSL，并通过 FRP 提供公网访问；离线时仍可查看源码与个人网站中的项目说明。
@@ -34,11 +35,17 @@
 
 - [个人简历网站](https://github.com/wangshun-china/interview-web)：Vue 3 简历站、项目展示和轻量运维后台，线上地址为 [wangshun.work](https://wangshun.work)。
 - [部署模板](https://github.com/xixi-box/template)：沉淀 GitHub Actions、Docker Compose、Self-hosted Runner、Nginx 与 FRP 部署方案。
-- 代码与正式项目主要维护在 [wangshun-china](https://github.com/wangshun-china) 组织中。
+- 部分代码与正式项目主要维护在 [wangshun-china](https://github.com/wangshun-china) 组织中。
 
 ## Tech Stack
 
-`Java` · `Spring Boot` · `Spring AI Alibaba` · `LangChain4j` · `Python` · `FastAPI` · `Vue 3` · `MySQL` · `Redis / Redisson` · `Netty` · `Docker` · `GitHub Actions`
+**AI 应用：** `Spring AI Alibaba` · `LangChain4j / LangGraph4j` · `ReAct Agent` · `Tool Calling` · `RAG` · `Prompt Engineering` · `结构化输出` · `大模型 API 集成`
+
+**后端与中间件：** `Java 21` · `Python` · `Spring Boot 3` · `FastAPI` · `Dubbo 3` · `Nacos` · `Netty` · `MySQL` · `Redis / Redisson` · `Caffeine` · `SSE`
+
+**前端与可视化：** `TypeScript` · `Vue 3` · `Vite` · `Element Plus` · `Tailwind CSS` · `Vue Flow` · `ECharts`
+
+**工程化与部署：** `Git` · `Docker / Docker Compose` · `GitHub Actions` · `CI/CD` · `Nginx` · `Linux` · `阿里云 ECS / ACR` · `Self-hosted Runner` · `FRP`
 
 ---
 
