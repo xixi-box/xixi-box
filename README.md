@@ -1,58 +1,64 @@
 <div align="center">
 
-# 王顺 · Wang Shun
+**English** | [简体中文](README.zh-CN.md)
 
-### AI 应用开发 / 通用后端开发
+</div>
 
-关注大模型工具调用、RAG、Agent 编排、代码生成，以及后端服务治理与工程化交付。
+<div align="center">
 
-[![个人网站](https://img.shields.io/badge/个人网站-wangshun.work-2563eb?style=for-the-badge)](https://wangshun.work)
-[![开发组织](https://img.shields.io/badge/GitHub_Organization-wangshun--china-24292f?style=for-the-badge&logo=github)](https://github.com/wangshun-china)
-[![联系邮箱](https://img.shields.io/badge/Email-2606209307%40qq.com-16a34a?style=for-the-badge)](mailto:2606209307@qq.com)
+# Wang Shun
+
+### AI Application Development / General Backend Development
+
+Focused on LLM tool calling, RAG, Agent orchestration, code generation, as well as backend service governance and engineering delivery.
+
+[![Personal Website](https://img.shields.io/badge/Website-wangshun.work-2563eb?style=for-the-badge)](https://wangshun.work)
+[![GitHub Organization](https://img.shields.io/badge/GitHub_Organization-wangshun--china-24292f?style=for-the-badge&logo=github)](https://github.com/wangshun-china)
+[![Email](https://img.shields.io/badge/Email-2606209307%40qq.com-16a34a?style=for-the-badge)](mailto:2606209307@qq.com)
 
 </div>
 
 ## About Me
 
-- 上海海洋大学硕士研究生，方向为基于3DGS的无人机影像实时三维建模。
-- 关注 AI Agent、LLM 应用工程、Java 后端与分布式系统。
-- 使用 Claude Code、Codex、GPT、Gemini、DeepSeek 辅助需求拆解、方案设计、实现、Review 与 Debug，并通过人工审查、测试和 CI/CD 控制交付质量。
-- 完整经历与在线项目演示请访问 [个人简历网站](https://wangshun.work)。
+- Master's student at Shanghai Ocean University, working on real-time 3D reconstruction of UAV imagery based on 3D Gaussian Splatting (3DGS).
+- Interested in AI Agents, LLM application engineering, Java backend, and distributed systems.
+- Use Claude Code, Codex, GPT, Gemini, and DeepSeek to assist with requirement breakdown, solution design, implementation, code review, and debugging — with quality controlled through manual review, testing, and CI/CD.
+- For the full experience and online project demos, visit [my resume website](https://wangshun.work).
 
 ## Featured Projects
 
-| 项目 | 简介 | 技术关键词 | 链接 |
+| Project | Description | Tech Keywords | Links |
 | --- | --- | --- | --- |
-| **AI Coder** | 面向自然语言生成前端应用的全栈平台，通过多 Agent 完成规划、脚手架生成、UI 编码、审查、修复、预览与部署闭环。 | Spring AI Alibaba Graph、LangChain4j、Tool Calling、RAG、Redis、Dubbo、Vue 3、Docker | [源码](https://github.com/wangshun-china/ai-code) · [在线体验](https://ai-coder.wangshun.work) |
-| **Lumina-RPC** | 自研轻量 RPC 框架，覆盖协议编解码、服务注册发现、动态代理、负载均衡、容错保护、链路追踪及可视化控制面。 | Java、Netty、ByteBuddy、SPI、SSE、Vue Flow、ECharts | [源码](https://github.com/wangshun-china/lumina-rpc) · [在线演示](https://rpc.wangshun.work) |
-| **Agent Quest** | 用交互式关卡展示 Agent Harness 的边界、工具调用、规划、记忆、观测与评测流程。 | TypeScript、Agent Harness、Tool Calling、Observability | [源码](https://github.com/wangshun-china/agent-quest) · [在线体验](https://agent.wangshun.work) |
-| **API 中转平台** | 自主搭建并维护的模型 API 中转服务，为不同模型渠道提供统一接口入口、调用管理与用量统计。 | 模型 API 聚合、渠道管理、用量统计、Docker、Nginx、HTTPS | [在线访问](https://api.wangshun.work) |
-| **AutoGuard AI** | GitHub App 智能代码审查服务，通过 Webhook 拉取 PR Diff，调用大模型生成结构化审查意见并回写评论。 | Python、FastAPI、GitHub App、Webhook、DeepSeek、JWT、HMAC | [源码](https://github.com/xixi-box/AutoGuard-AI-Reviewer) |
+| **AI Coder** | Full-stack platform for generating frontend applications from natural language, with multiple Agents covering planning, scaffolding, UI coding, review, fixing, preview, and deployment. | Spring AI Alibaba Graph, LangChain4j, Tool Calling, RAG, Redis, Dubbo, Vue 3, Docker | [Source](https://github.com/wangshun-china/ai-code) · [Live Demo](https://ai-coder.wangshun.work) |
+| **Lumina-RPC** | Self-built lightweight RPC framework covering protocol codec, service registry and discovery, dynamic proxy, load balancing, fault tolerance, tracing, and a visual control plane. | Java, Netty, ByteBuddy, SPI, SSE, Vue Flow, ECharts | [Source](https://github.com/wangshun-china/lumina-rpc) · [Live Demo](https://rpc.wangshun.work) |
+| **Agent Quest** | Interactive levels showcasing Agent Harness capabilities: boundaries, tool calling, planning, memory, observability, and evaluation. | TypeScript, Agent Harness, Tool Calling, Observability | [Source](https://github.com/wangshun-china/agent-quest) · [Live Demo](https://agent.wangshun.work) |
+| **API Relay Platform** | Self-hosted and maintained LLM API relay service, providing a unified interface, call management, and usage analytics across different model providers. | Model API aggregation, channel management, usage analytics, Docker, Nginx, HTTPS | [Live](https://api.wangshun.work) |
+| **AutoGuard AI** | GitHub App for intelligent code review — pulls PR diffs via Webhook, calls LLMs to generate structured review comments, and posts them back. | Python, FastAPI, GitHub App, Webhook, DeepSeek, JWT, HMAC | [Source](https://github.com/xixi-box/AutoGuard-AI-Reviewer) |
 
-> 部分在线演示运行在本地 WSL，并通过 FRP 提供公网访问；离线时仍可查看源码与个人网站中的项目说明。
+> Some online demos run on a local WSL instance and are exposed to the public internet via FRP; when offline, the source code and project descriptions on my website are still available.
 
 ## Engineering & Delivery
 
-- [个人简历网站](https://github.com/wangshun-china/interview-web)：Vue 3 简历站、项目展示和轻量运维后台，线上地址为 [wangshun.work](https://wangshun.work)。
-- [部署模板](https://github.com/xixi-box/template)：沉淀 GitHub Actions、Docker Compose、Self-hosted Runner、Nginx 与 FRP 部署方案。
-- 部分代码与正式项目主要维护在 [wangshun-china](https://github.com/wangshun-china) 组织中。
+- [Resume website](https://github.com/wangshun-china/interview-web): a Vue 3 resume site with project showcase and a lightweight ops console, live at [wangshun.work](https://wangshun.work).
+- [Deployment templates](https://github.com/xixi-box/template): reusable solutions for GitHub Actions, Docker Compose, Self-hosted Runner, Nginx, and FRP.
+- Some code and core projects are mainly maintained in the [wangshun-china](https://github.com/wangshun-china) organization.
 
 ## Tech Stack
 
-**AI 应用：** `Spring AI Alibaba` · `LangChain4j / LangGraph4j` · `ReAct Agent` · `Tool Calling` · `RAG` · `Prompt Engineering` · `结构化输出` · `大模型 API 集成`
+**AI Applications:** `Spring AI Alibaba` · `LangChain4j / LangGraph4j` · `ReAct Agent` · `Tool Calling` · `RAG` · `Prompt Engineering` · `Structured Output` · `LLM API Integration`
 
-**后端与中间件：** `Java 21` · `Python` · `Spring Boot 3` · `FastAPI` · `Dubbo 3` · `Nacos` · `Netty` · `MySQL` · `Redis / Redisson` · `Caffeine` · `SSE`
+**Backend & Middleware:** `Java 21` · `Python` · `Spring Boot 3` · `FastAPI` · `Dubbo 3` · `Nacos` · `Netty` · `MySQL` · `Redis / Redisson` · `Caffeine` · `SSE`
 
-**前端与可视化：** `TypeScript` · `Vue 3` · `Vite` · `Element Plus` · `Tailwind CSS` · `Vue Flow` · `ECharts`
+**Frontend & Visualization:** `TypeScript` · `Vue 3` · `Vite` · `Element Plus` · `Tailwind CSS` · `Vue Flow` · `ECharts`
 
-**工程化与部署：** `Git` · `Docker / Docker Compose` · `GitHub Actions` · `CI/CD` · `Nginx` · `Linux` · `阿里云 ECS / ACR` · `Self-hosted Runner` · `FRP`
+**DevOps & Deployment:** `Git` · `Docker / Docker Compose` · `GitHub Actions` · `CI/CD` · `Nginx` · `Linux` · `Alibaba Cloud ECS / ACR` · `Self-hosted Runner` · `FRP`
 
 ---
 
 <div align="center">
-  <a href="https://wangshun.work">个人网站</a>
+  <a href="https://wangshun.work">Website</a>
   ·
-  <a href="https://github.com/wangshun-china">开发组织</a>
+  <a href="https://github.com/wangshun-china">Organization</a>
   ·
-  <a href="mailto:2606209307@qq.com">联系我</a>
+  <a href="mailto:2606209307@qq.com">Contact Me</a>
 </div>
