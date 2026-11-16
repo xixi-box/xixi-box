@@ -2,6 +2,12 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const username = process.env.PROFILE_GITHUB_USER || 'xixi-box';
 const token = process.env.GH_TOKEN;
+const headers = {
+  Accept: 'application/vnd.github+json',
+  Authorization: `Bearer ${token}`,
+  'X-GitHub-Api-Version': '2022-11-28',
+  'User-Agent': 'xixi-box-profile-visuals',
+};
 const excludedOwners = new Set(
   (process.env.EXCLUDED_REPO_OWNERS || 'xixi-box,wangshun-china')
     .split(',')
@@ -23,12 +29,7 @@ for (let page = 1; ; page += 1) {
   url.searchParams.set('page', String(page));
 
   const response = await fetch(url, {
-    headers: {
-      Accept: 'application/vnd.github+json',
-      Authorization: `Bearer ${token}`,
-      'X-GitHub-Api-Version': '2022-11-28',
-      'User-Agent': 'xixi-box-profile-visuals',
-    },
+    headers,
   });
 
   if (!response.ok) {
@@ -54,11 +55,31 @@ const upstream = allPullRequests.filter((item) => {
 });
 
 const uniqueRepos = new Set(upstream.map((item) => item.repository_url));
+let upstreamStars = 0;
+
+// One repository lookup per unique upstream; multiple merged PRs do not double-count stars.
+for (const repositoryUrl of uniqueRepos) {
+  const response = await fetch(repositoryUrl, { headers });
+  if (!response.ok) {
+    throw new Error(`Could not retrieve upstream repository stars: ${repositoryUrl} (HTTP ${response.status})`);
+  }
+
+  const repository = await response.json();
+  if (!Number.isSafeInteger(repository.stargazers_count) || repository.stargazers_count < 0) {
+    throw new Error(`Invalid stargazers_count from ${repositoryUrl}; keeping the existing card.`);
+  }
+  upstreamStars += repository.stargazers_count;
+}
+
 const updated = new Date().toISOString().slice(0, 10);
+const formattedStars = new Intl.NumberFormat('en-US', {
+  notation: 'compact',
+  maximumFractionDigits: 1,
+}).format(upstreamStars);
 const stats = [
   { value: upstream.length, label: 'MERGED UPSTREAM PRS', x: 58 },
   { value: uniqueRepos.size, label: 'UPSTREAM REPOSITORIES', x: 330 },
-  { value: '6', label: 'FEATURED PR STORIES', x: 604 },
+  { value: formattedStars, label: 'TOTAL UPSTREAM STARS', x: 604 },
 ];
 
 const metrics = stats.map(({ value, label, x }) => `
@@ -66,7 +87,7 @@ const metrics = stats.map(({ value, label, x }) => `
   <text x="${x}" y="128" font-size="13" font-weight="700" letter-spacing="1.4" fill="#a4c3d6">${label}</text>
 `).join('');
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="860" height="180" viewBox="0 0 860 180" role="img" aria-label="${upstream.length} merged upstream pull requests across ${uniqueRepos.size} repositories">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="860" height="180" viewBox="0 0 860 180" role="img" aria-label="${upstream.length} merged upstream pull requests across ${uniqueRepos.size} repositories, with ${upstreamStars.toLocaleString('en-US')} combined upstream stars">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#091726" />
@@ -82,10 +103,11 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="860" height="180" vi
   <text x="58" y="35" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="3" fill="#5eead4">OPEN SOURCE IMPACT</text>
   <g font-family="Arial, Helvetica, sans-serif">${metrics}
     <path d="M 300 58 V 139 M 574 58 V 139" stroke="#4a728b" opacity="0.48" />
+    <text x="58" y="160" font-size="11" fill="#7295af">STARS ARE THE UPSTREAM PROJECTS' TOTALS</text>
     <text x="800" y="160" text-anchor="end" font-size="11" fill="#7295af">UPDATED ${updated} UTC</text>
   </g>
 </svg>\n`;
 
 await mkdir('dist', { recursive: true });
 await writeFile('dist/merged-prs.svg', svg, 'utf8');
-console.log(`Updated upstream merged PR card: ${upstream.length} PRs in ${uniqueRepos.size} repositories (${allPullRequests.length} total merged).`);
+console.log(`Updated upstream merged PR card: ${upstream.length} PRs in ${uniqueRepos.size} repositories, ${upstreamStars} combined upstream stars.`);
