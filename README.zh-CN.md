@@ -1,41 +1,41 @@
 <div align="center">
 
-[English](README.md) | **简体中文**
+[English](README.md) · **简体中文**
 
-</div>
-
-<div align="center">
-
-# 王顺
+<img src="assets/hero.svg" alt="王顺 — AI 应用开发与后端工程" width="100%" />
 
 ### AI 应用开发 / 通用后端开发
 
 关注大模型工具调用、RAG、Agent 编排、代码生成，以及后端服务治理与工程化交付。
 
-[![个人网站](https://img.shields.io/badge/个人网站-wangshun.work-2563eb?style=for-the-badge)](https://wangshun.work)
-[![开发组织](https://img.shields.io/badge/GitHub_Organization-wangshun--china-24292f?style=for-the-badge&logo=github)](https://github.com/wangshun-china)
-[![联系邮箱](https://img.shields.io/badge/Email-2606209307%40qq.com-16a34a?style=for-the-badge)](mailto:2606209307@qq.com)
+[![个人网站](https://img.shields.io/badge/个人网站-wangshun.work-0f766e?style=flat-square&logo=googlechrome&logoColor=white)](https://wangshun.work)
+[![开发组织](https://img.shields.io/badge/开发组织-wangshun--china-182b42?style=flat-square&logo=github&logoColor=white)](https://github.com/wangshun-china)
+[![联系邮箱](https://img.shields.io/badge/邮箱-2606209307%40qq.com-2563eb?style=flat-square&logo=gmail&logoColor=white)](mailto:2606209307@qq.com)
 
 </div>
 
 ## 关于我
 
-- 上海海洋大学硕士研究生，方向为基于 3DGS 的无人机影像实时三维建模。
-- 关注 AI Agent、LLM 应用工程、Java 后端与分布式系统。
+- **上海海洋大学**硕士研究生，方向为基于 **3DGS** 的无人机影像实时三维建模。
+- 关注 **AI Agent、LLM 应用工程、Java 后端与分布式系统**。
 - 使用 Claude Code、Codex、GPT、Gemini、DeepSeek 辅助需求拆解、方案设计、实现、Review 与 Debug，并通过人工审查、测试和 CI/CD 控制交付质量。
 - 完整经历与在线项目演示请访问 [个人简历网站](https://wangshun.work)。
 
 ## 精选项目
 
-| 项目 | 简介 | 技术关键词 | 链接 |
-| --- | --- | --- | --- |
-| **AI Coder** | 面向自然语言生成前端应用的全栈平台，通过多 Agent 完成规划、脚手架生成、UI 编码、审查、修复、预览与部署闭环。 | Spring AI Alibaba Graph、LangChain4j、Tool Calling、RAG、Redis、Dubbo、Vue 3、Docker | [源码](https://github.com/wangshun-china/ai-code) · [在线体验](https://ai-coder.wangshun.work) |
-| **Lumina-RPC** | 自研轻量 RPC 框架，覆盖协议编解码、服务注册发现、动态代理、负载均衡、容错保护、链路追踪及可视化控制面。 | Java、Netty、ByteBuddy、SPI、SSE、Vue Flow、ECharts | [源码](https://github.com/wangshun-china/lumina-rpc) · [在线演示](https://rpc.wangshun.work) |
-| **Agent Quest** | 用交互式关卡展示 Agent Harness 的边界、工具调用、规划、记忆、观测与评测流程。 | TypeScript、Agent Harness、Tool Calling、Observability | [源码](https://github.com/wangshun-china/agent-quest) · [在线体验](https://agent.wangshun.work) |
-| **API 中转平台** | 自主搭建并维护的模型 API 中转服务，为不同模型渠道提供统一接口入口、调用管理与用量统计。 | 模型 API 聚合、渠道管理、用量统计、Docker、Nginx、HTTPS | [在线访问](https://api.wangshun.work) |
-| **AutoGuard AI** | GitHub App 智能代码审查服务，通过 Webhook 拉取 PR Diff，调用大模型生成结构化审查意见并回写评论。 | Python、FastAPI、GitHub App、Webhook、DeepSeek、JWT、HMAC | [源码](https://github.com/xixi-box/AutoGuard-AI-Reviewer) |
+| AI 与 Agent 应用 | 后端与基础设施 |
+| :--- | :--- |
+| **[AI Coder](https://github.com/wangshun-china/ai-code)** <br><br> 面向自然语言生成前端应用的全栈平台，通过多 Agent 完成规划、脚手架生成、UI 编码、审查、修复、预览与部署闭环。 <br><br> `Spring AI Alibaba Graph` · `LangChain4j` · `Tool Calling` · `RAG` · `Redis` · `Dubbo` · `Vue 3` · `Docker` <br><br> [源码](https://github.com/wangshun-china/ai-code) · **[在线体验](https://ai-coder.wangshun.work)** | **[Lumina-RPC](https://github.com/wangshun-china/lumina-rpc)** <br><br> 自研轻量 RPC 框架，覆盖协议编解码、服务注册发现、动态代理、负载均衡、容错保护、链路追踪及可视化控制面。 <br><br> `Java` · `Netty` · `ByteBuddy` · `SPI` · `SSE` · `Vue Flow` · `ECharts` <br><br> [源码](https://github.com/wangshun-china/lumina-rpc) · **[在线演示](https://rpc.wangshun.work)** |
+| **[Agent Quest](https://github.com/wangshun-china/agent-quest)** <br><br> 用交互式关卡展示 Agent Harness 的边界、工具调用、规划、记忆、观测与评测流程。 <br><br> `TypeScript` · `Agent Harness` · `Tool Calling` · `Observability` <br><br> [源码](https://github.com/wangshun-china/agent-quest) · **[在线体验](https://agent.wangshun.work)** | **API 中转平台** <br><br> 自主搭建并维护的模型 API 中转服务，为不同模型渠道提供统一接口入口、调用管理与用量统计。 <br><br> `模型 API 聚合` · `渠道管理` · `用量统计` · `Docker` · `Nginx` · `HTTPS` <br><br> **[在线访问](https://api.wangshun.work)** |
+| **[AutoGuard AI](https://github.com/xixi-box/AutoGuard-AI-Reviewer)** <br><br> GitHub App 智能代码审查服务，通过 Webhook 拉取 PR Diff，调用大模型生成结构化审查意见并回写评论。 <br><br> `Python` · `FastAPI` · `GitHub App` · `Webhook` · `DeepSeek` · `JWT` · `HMAC` <br><br> [源码](https://github.com/xixi-box/AutoGuard-AI-Reviewer) | **更多项目** <br><br> 在个人网站查看更完整的项目说明、工程实践和在线演示。 <br><br> **[查看作品集](https://wangshun.work)** · [GitHub 开发组织](https://github.com/wangshun-china) |
 
-> 部分在线演示运行在本地 WSL，并通过 FRP 提供公网访问；离线时仍可查看源码与个人网站中的项目说明。
+> **演示可用性：** 部分在线演示运行在本地 WSL，并通过 FRP 提供公网访问；离线时仍可查看源码与个人网站中的项目说明。
+
+## 开源贡献
+
+除了开发自己的项目，我也持续参与开源社区的缺陷修复与功能改进。可以直接在 GitHub 查看 PR 的代码修改、讨论和合并记录。
+
+**[已合并的 Pull Request](https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests)** · [全部 Pull Request](https://github.com/search?q=is%3Apr+author%3Axixi-box&type=pullrequests)
 
 ## 工程化与交付
 
@@ -44,6 +44,21 @@
 - 部分代码与正式项目主要维护在 [wangshun-china](https://github.com/wangshun-china) 组织中。
 
 ## 技术栈
+
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" title="Java" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring" title="Spring" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" title="Python" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue" title="Vue" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis" title="Redis" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" title="GitHub Actions" width="38" height="38" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" title="Linux" width="38" height="38" />
+
+</div>
 
 **AI 应用：** `Spring AI Alibaba` · `LangChain4j / LangGraph4j` · `ReAct Agent` · `Tool Calling` · `RAG` · `Prompt Engineering` · `结构化输出` · `大模型 API 集成`
 
@@ -56,9 +71,7 @@
 ---
 
 <div align="center">
-  <a href="https://wangshun.work">个人网站</a>
-  ·
-  <a href="https://github.com/wangshun-china">开发组织</a>
-  ·
-  <a href="mailto:2606209307@qq.com">联系我</a>
+
+[个人网站](https://wangshun.work) · [开发组织](https://github.com/wangshun-china) · [联系我](mailto:2606209307@qq.com)
+
 </div>
