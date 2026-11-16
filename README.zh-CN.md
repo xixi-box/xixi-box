@@ -33,7 +33,7 @@
 
 ## 精选开源贡献
 
-除了开发自己的项目，我也向广泛使用的开源项目贡献缺陷修复和回归测试。以下 6 个 PR 均已被上游合并：
+除了开发自己的项目，我也向广泛使用的开源项目贡献缺陷修复和回归测试。下面精选了其中 6 个具有代表性的已合并 PR：
 
 <div align="center">
 <a href="https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/merged-prs.svg" alt="已合并的外部 PR、上游仓库数量及这些仓库的 Star 总和" width="100%" /></a>
