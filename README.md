@@ -35,6 +35,12 @@ Focused on LLM tool calling, RAG, Agent orchestration, code generation, as well 
 
 Beyond my own projects, I contribute fixes and regression tests to widely used open-source software. Here are six merged upstream pull requests:
 
+<div align="center">
+<a href="https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/merged-prs.svg" alt="Merged upstream pull requests, upstream repositories, and featured contributions" width="100%" /></a>
+</div>
+
+<sub>Live upstream merge counts exclude repositories under xixi-box and wangshun-china. Refreshed daily via GitHub Actions.</sub>
+
 | Project | Merged Contribution |
 | :--- | :--- |
 | **[ClickHouse · #129709](https://github.com/ClickHouse/ClickHouse/pull/129709)** | Fixed MySQL OK-packet payload sizing and parsing of optional fields. |
