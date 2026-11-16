@@ -36,10 +36,10 @@
 除了开发自己的项目，我也向广泛使用的开源项目贡献缺陷修复和回归测试。以下 6 个 PR 均已被上游合并：
 
 <div align="center">
-<a href="https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/merged-prs.svg" alt="已合并的外部 PR 数量、贡献上游仓库数量与精选贡献" width="100%" /></a>
+<a href="https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/merged-prs.svg" alt="已合并的外部 PR、上游仓库数量及这些仓库的 Star 总和" width="100%" /></a>
 </div>
 
-<sub>外部合并统计排除 xixi-box 与 wangshun-china 旗下仓库，由 GitHub Actions 每天自动刷新。</sub>
+<sub>外部贡献排除 xixi-box 与 wangshun-china 旗下仓库。Star 是参与贡献的各上游仓库当前 Star 之和，每个仓库只计算一次，并非个人获得的 Star。三项数据均由 GitHub Actions 每天自动更新。</sub>
 
 | 项目 | 已合并的贡献 |
 | :--- | :--- |
