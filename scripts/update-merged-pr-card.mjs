@@ -58,7 +58,7 @@ const updated = new Date().toISOString().slice(0, 10);
 const stats = [
   { value: upstream.length, label: 'MERGED UPSTREAM PRS', x: 58 },
   { value: uniqueRepos.size, label: 'UPSTREAM REPOSITORIES', x: 330 },
-  { value: allPullRequests.length, label: 'ALL MERGED PRS', x: 604 },
+  { value: '6', label: 'FEATURED PR STORIES', x: 604 },
 ];
 
 const metrics = stats.map(({ value, label, x }) => `
