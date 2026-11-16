@@ -31,11 +31,20 @@
 
 > **演示可用性：** 部分在线演示运行在本地 WSL，并通过 FRP 提供公网访问；离线时仍可查看源码与个人网站中的项目说明。
 
-## 开源贡献
+## 精选开源贡献
 
-除了开发自己的项目，我也持续参与开源社区的缺陷修复与功能改进。可以直接在 GitHub 查看 PR 的代码修改、讨论和合并记录。
+除了开发自己的项目，我也向广泛使用的开源项目贡献缺陷修复和回归测试。以下 6 个 PR 均已被上游合并：
 
-**[已合并的 Pull Request](https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests)** · [全部 Pull Request](https://github.com/search?q=is%3Apr+author%3Axixi-box&type=pullrequests)
+| 项目 | 已合并的贡献 |
+| :--- | :--- |
+| **[ClickHouse · #129709](https://github.com/ClickHouse/ClickHouse/pull/129709)** | 修复 MySQL OK 数据包长度计算及可选字段解析问题。 |
+| **[Wasmtime · #15275](https://github.com/bytecodealliance/wasmtime/pull/15275)** | 修复自定义内存页大小场景下的 Wasm Core Dump 数据截断问题。 |
+| **[go-redis · #4296](https://github.com/redis/go-redis/pull/4296)** | 限制 RESP3 响应递归解析深度，防止恶意深层嵌套耗尽调用栈。 |
+| **[Qdrant · #11350](https://github.com/qdrant/qdrant/pull/11350)** | 修复欧氏距离推荐评分中阈值比较方向错误。 |
+| **[MCP Rust SDK · #1427](https://github.com/modelcontextprotocol/rust-sdk/pull/1427)** | 修复 Streamable HTTP 有状态会话在服务关闭时未及时响应取消信号的问题。 |
+| **[PR-Agent · #4932](https://github.com/The-PR-Agent/pr-agent/pull/4932)** | 根据 GitLab 项目可见性限制工单上下文读取，避免受限 Issue 信息泄露。 |
+
+**[查看全部已合并 PR](https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests)** · [全部 PR 动态](https://github.com/search?q=is%3Apr+author%3Axixi-box&type=pullrequests)
 
 ## 工程化与交付
 
@@ -67,6 +76,23 @@
 **前端与可视化：** `TypeScript` · `Vue 3` · `Vite` · `Element Plus` · `Tailwind CSS` · `Vue Flow` · `ECharts`
 
 **工程化与部署：** `Git` · `Docker / Docker Compose` · `GitHub Actions` · `CI/CD` · `Nginx` · `Linux` · `阿里云 ECS / ACR` · `Self-hosted Runner` · `FRP`
+
+## GitHub 活跃统计
+
+<div align="center">
+
+<a href="https://github.com/xixi-box"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/stats.svg" alt="王顺的 GitHub 统计" height="170" /></a>
+<a href="https://github.com/xixi-box?tab=repositories"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/top-langs.svg" alt="主要仓库编程语言统计" height="170" /></a>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xixi-box/xixi-box/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xixi-box/xixi-box/output/github-snake-light.svg" />
+  <img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/github-snake-light.svg" alt="贪吃蛇动画展示王顺的 GitHub 贡献热力图" width="100%" />
+</picture>
+
+<sub>统计卡片和贡献贪吃蛇由 GitHub Actions 每天自动更新。</sub>
+
+</div>
 
 ---
 
