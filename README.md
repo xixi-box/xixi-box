@@ -31,11 +31,20 @@ Focused on LLM tool calling, RAG, Agent orchestration, code generation, as well 
 
 > **Demo availability:** Some online demos run on a local WSL instance and are exposed to the public internet via FRP. When offline, the source code and project descriptions on my website are still available.
 
-## Open Source
+## Selected Open Source Contributions
 
-I contribute fixes and improvements to open-source projects alongside building my own tools. See the review history, discussions, and merged changes directly on GitHub.
+Beyond my own projects, I contribute fixes and regression tests to widely used open-source software. Here are six merged upstream pull requests:
 
-**[Merged Pull Requests](https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests)** · [All Pull Requests](https://github.com/search?q=is%3Apr+author%3Axixi-box&type=pullrequests)
+| Project | Merged Contribution |
+| :--- | :--- |
+| **[ClickHouse · #129709](https://github.com/ClickHouse/ClickHouse/pull/129709)** | Fixed MySQL OK-packet payload sizing and parsing of optional fields. |
+| **[Wasmtime · #15275](https://github.com/bytecodealliance/wasmtime/pull/15275)** | Fixed core dumps for custom-page-size WebAssembly memories, including truncated final chunks. |
+| **[go-redis · #4296](https://github.com/redis/go-redis/pull/4296)** | Limited nested RESP3 reply parsing to prevent stack exhaustion from malicious responses. |
+| **[Qdrant · #11350](https://github.com/qdrant/qdrant/pull/11350)** | Corrected Euclidean distance threshold handling in recommendation scoring. |
+| **[MCP Rust SDK · #1427](https://github.com/modelcontextprotocol/rust-sdk/pull/1427)** | Ensured stateful Streamable HTTP session workers honor cancellation during shutdown. |
+| **[PR-Agent · #4932](https://github.com/The-PR-Agent/pr-agent/pull/4932)** | Guarded GitLab ticket context by project visibility to prevent restricted issue data exposure. |
+
+**[View All Merged PRs](https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests)** · [All PR Activity](https://github.com/search?q=is%3Apr+author%3Axixi-box&type=pullrequests)
 
 ## Engineering & Delivery
 
@@ -67,6 +76,23 @@ I contribute fixes and improvements to open-source projects alongside building m
 **Frontend & Visualization:** `TypeScript` · `Vue 3` · `Vite` · `Element Plus` · `Tailwind CSS` · `Vue Flow` · `ECharts`
 
 **DevOps & Deployment:** `Git` · `Docker / Docker Compose` · `GitHub Actions` · `CI/CD` · `Nginx` · `Linux` · `Alibaba Cloud ECS / ACR` · `Self-hosted Runner` · `FRP`
+
+## GitHub Activity
+
+<div align="center">
+
+<a href="https://github.com/xixi-box"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/stats.svg" alt="Wang Shun's GitHub statistics" height="170" /></a>
+<a href="https://github.com/xixi-box?tab=repositories"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/top-langs.svg" alt="Most used repository languages" height="170" /></a>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xixi-box/xixi-box/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xixi-box/xixi-box/output/github-snake-light.svg" />
+  <img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/github-snake-light.svg" alt="Animated snake moving across Wang Shun's GitHub contribution graph" width="100%" />
+</picture>
+
+<sub>Statistics and contribution animation refresh daily via GitHub Actions.</sub>
+
+</div>
 
 ---
 
