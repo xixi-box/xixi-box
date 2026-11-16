@@ -33,7 +33,7 @@ Focused on LLM tool calling, RAG, Agent orchestration, code generation, as well 
 
 ## Selected Open Source Contributions
 
-Beyond my own projects, I contribute fixes and regression tests to widely used open-source software. Here are six merged upstream pull requests:
+Beyond my own projects, I contribute fixes and regression tests to widely used open-source software. Here are six representative examples of my merged upstream pull requests:
 
 <div align="center">
 <a href="https://github.com/search?q=is%3Apr+author%3Axixi-box+is%3Amerged&type=pullrequests"><img src="https://raw.githubusercontent.com/xixi-box/xixi-box/output/merged-prs.svg" alt="Merged upstream pull requests, upstream repositories, and their combined stars" width="100%" /></a>
