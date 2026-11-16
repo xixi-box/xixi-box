@@ -51,6 +51,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
+      - name: Generate merged upstream PR card
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/update-merged-pr-card.mjs
+
       - name: Publish generated visuals to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
